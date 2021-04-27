@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  h2= subtitle
+  ul
+    li(onclick="moveTop()")= titleTop
+    li(onclick="moveJumps()")= titleJumps
+    li(onclick="moveChanges()")= titleChanges
+    li(onclick="moveBestBuy()")= titleBuy
+  script.
+    function moveTop() {
+      window.location.href = '/topList'
+    }
+    function moveJumps() {
+      window.location.href = '/jump'
+    }
+    function moveChanges() {
+      window.location.href = '/changes'
+    }
+    function moveBestBuy() {
+      window.location.href = '/bestBuy'
+    }
